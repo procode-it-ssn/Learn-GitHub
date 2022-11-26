@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procode Git Session</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <style>
+      .shadow-filter {
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15))
+          drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.35));
+      }
+
+      .text-shadow-lg {
+        text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3),
+          0 5px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      body {
+        overflow: overlay;
+        background-image: url('https://media.idownloadblog.com/wp-content/uploads/2021/06/macOS-Monterey-wallpaper-Light-2048x2048.jpg');
+        background-size: cover;
+        background-position: -8%;
+      }
+
+      /* custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 20px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: transparent !important;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #4e51523b;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #a39d9da1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./index.js" type="text/babel"></script>
+  </body>
+</html>
